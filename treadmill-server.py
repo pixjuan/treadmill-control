@@ -24,7 +24,7 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# usage : udp2serial.py [serial_device [udp_port]]
+# usage : treadmill-server.py [serial_device [udp_port]]
 
 import serial
 import socket
@@ -32,7 +32,7 @@ import sys
 import subprocess
 import time
 import signal
-from twebstats import twebstats
+from tmwebstats import tmwebstats
 
 treadmill_log = None
 
@@ -166,8 +166,10 @@ def main():
     if s.WEB_SERVER_ENABLED:
         print "starting web server"
         
-        t = twebstats()
+        t = tmwebstats()
         s.webstats = t
+        with open(s.LOGFILE, 'a+') as f:
+            pass
         t.readCSV()
         t.draw()
         t.start()

@@ -2,7 +2,7 @@
 
 if [ $# -ne 1 ] ; then
    echo "error $0 needs a single parameter :"
-   echo "s : start/stop the trheadmill"
+   echo "s : start/stop the treadmill"
    echo "p : increase speed"
    echo "m : decrease speed"
 fi
