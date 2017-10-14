@@ -7,6 +7,7 @@ It consist of 3 parts :
 - a wrapper around socat to send commands through the CLI
 
 Dependencies:
+-------------
 
 - Timer module for the Arduino code, can be downloaded athttp://playground.arduino.cc/Code/Timer
 - matplotlib, cand be sintalled with : pip install matplotlib
@@ -16,12 +17,14 @@ The other details are on the HackaDay project page : https://hackaday.io/project
 
 
 
-Configuration
+Configuration:
+--------------
 
 For the moment, you need to edit treadmill-server.py if you want to customize the default UDP port or your weight.
 
 
-Usage
+Usage:
+------
 
 Start the server with the following command line : treadmill-server.py [serial_device [udp_port]]
 You can then control the treadmill by calling treadmill-cmd with a parameter:
