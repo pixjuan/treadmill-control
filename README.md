@@ -1,7 +1,7 @@
 # treadmill-control
 Project for controlling your treadmill with an Arduino
 
-It consist of 3 parts :
+It consists of 3 parts :
 - some Arduino code to control the treadmill
 - some Python code to communicate with the Arduino and interact with the user
 - a wrapper around socat to send commands through the CLI
@@ -9,12 +9,11 @@ It consist of 3 parts :
 Dependencies:
 -------------
 
-- Timer module for the Arduino code, can be downloaded athttp://playground.arduino.cc/Code/Timer
-- matplotlib, cand be sintalled with : pip install matplotlib
+- Timer module for the Arduino code, can be downloaded at http://playground.arduino.cc/Code/Timer
+- matplotlib, can be intalled with : pip install matplotlib
 - socat, on debian derivatives, it can be installed with : apt-get install socat
 
 The other details are on the HackaDay project page : https://hackaday.io/project/25881-keyboard-controlled-treadmilldesk
-
 
 
 Configuration:
